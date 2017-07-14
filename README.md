@@ -1,6 +1,8 @@
 # Simple Signature
 Simple Signature is a simple JavaScript library for online agreements signing. It can be easily attached to your website and allow you to sign an online agreement. It's indepenedant - you can use it without any additional scripts.
 
+![Example](https://raw.githubusercontent.com/BociucH/Simple-Signature/master/example/img/bde5338ddd2dbe33d2b1ef3346df4799.jpg)
+
 ## Installation
 To install all dependencies:
 ```bash
