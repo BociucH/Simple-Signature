@@ -6,7 +6,7 @@ To install all dependencies:
 ```bash
 npm install
 ```
-
+You can download the minified version of the script [here](https://raw.githubusercontent.com/BociucH/Simple-Signature/master/example/js/signature.min.js).
 ## Usage
 
 ```html
