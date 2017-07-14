@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Signature</title>
+</head>
+
+<body>
+<canvas id="signature"></canvas>
+
+<div>
+	<button id="save-signature">Save your signature</button>
+	<button id="clear-signature">Clear</button>
+</div>
+
+<script src="js/signature.js"></script>
+<script>
+	Signature.init({
+		width: 200,
+		height: 200,
+		canvasElement: '#signature'
+	});
+</script>
+</body>
+
+</html>

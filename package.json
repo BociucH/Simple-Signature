@@ -1,0 +1,20 @@
+{
+  "name": "simple_signature",
+  "version": "1.0.0",
+  "description": "Simple signature script for online agreements signing",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "Dominik Gąsior",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "ts-loader": "^2.2.2",
+    "typescript": "^2.4.1",
+    "webpack": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.2.7"
+  }
+}
