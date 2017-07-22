@@ -4,8 +4,6 @@
 |--------------------------------------------------------------------------
 */
 
-// import * as jQuery from 'jquery';
-
 import { Canvas } from './canvas';
 import { Mouse } from './mouse';
 
@@ -40,10 +38,16 @@ export class Manager {
 
 	/**
 	 * Save a signature
-	 * @param {string} imageBase64 [description]
+	 * @param {string} imageBase64 Encoded image string
 	 */
 	public static saveSignature(imageBase64: string): void {
-		jQuery.post("upload.php", {image: imageBase64});
+		let request = new XMLHttpRequest();
+
+		request.open('POST', 'upload.php', true);
+		request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+		let image = JSON.stringify({image: encodeURIComponent(imageBase64)});
+		request.send(`image=${image}`);
 	}
 
 }
